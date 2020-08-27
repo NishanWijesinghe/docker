@@ -9,7 +9,7 @@ set -o pipefail
 
 . jenkins-support
 
-: "${DOCKERHUB_ORGANISATION:=jenkins}"
+: "${DOCKERHUB_ORGANISATION:=nishanwij}"
 : "${DOCKERHUB_REPO:=jenkins}"
 
 JENKINS_REPO="${DOCKERHUB_ORGANISATION}/${DOCKERHUB_REPO}"
