@@ -71,6 +71,9 @@ test: test-debian test-alpine test-slim test-jdk11 test-centos test-centos7 test
 test-install-plugins: prepare-test
 	DOCKERFILE=Dockerfile-alpine bats/bin/bats tests/install-plugins.bats tests/install-plugins-plugins-cli.bats
 
+publish_jdk11:
+	./publish.sh --variant jdk11 --start-after 2.151
+
 publish:
 	./publish.sh ; \
 	./publish.sh --variant alpine ; \
